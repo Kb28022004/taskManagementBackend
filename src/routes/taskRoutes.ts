@@ -4,7 +4,7 @@ import { getTasks, getTaskById, createTask, updateTask, deleteTask } from '../co
 
 const router = express.Router();
 
-router.use(authenticateToken); // Protect all task routes
+router.use(authenticateToken);
 
 router.get('/', getTasks);
 router.get('/:id', getTaskById);
